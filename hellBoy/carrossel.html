@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .section1 {
+            display: flex;
+            background-color: white;
+            height: 70vh;
+        }
+        .video {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .info {
+            flex: 1;
+            padding: 20px;
+        }
+        .section2 {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            background-color: gray;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card img {
+            max-width: 650px; /* Aumenta o tamanho das imagens */
+            margin: 0 10px;
+        }
+        .arrow {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .arrow:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section1">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/00kfmAssyAU?si=Ufp5P8Ci2Jh8qGf-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="info">
+            <h1>Hellboy</h1>
+            <p>"Hellboy" é uma franquia de filmes baseada no personagem das histórias em quadrinhos da Dark Horse Comics. O filme mais recente, "Hellboy" (2019), foi dirigido por Neil Marshall e estrelado por David Harbour no papel principal. A trama gira em torno de Hellboy, um investigador paranormal que foi criado por Trevor Bruttenholm, seu pai adotivo, após ser invocado por um feiticeiro durante a Segunda Guerra Mundial.</p>
+        </div>
+    </div>
+
+    <div class="section2">
+        <h2>Mais de 500 alunos iniciaram o curso</h2>
+        <div class="card">
+           <img src="setaesquerda-a74b4d3e894b42f696072394a2628880.svg" alt="" class="arrow" id="seta-esquerda" onclick="imagemAnterior()">
+           <img src="Leonardo-d766b6b2d9fb4029a3322305fbd009f1.svg" alt="" class="slider-image">
+           <img src="Samantha-fbc2906d694e40948b55acd983bcf5d7.svg" alt="" class="slider-image">
+           <img src="Bruna-b2260d1ab66e43f4853817e9ad5a6668.svg" alt="" class="slider-image">
+           <img src="setadireita-6c025276016244598883e660f9b9edc9.svg" alt="" class="arrow" id="seta-direita" onclick="proximaImagem()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
