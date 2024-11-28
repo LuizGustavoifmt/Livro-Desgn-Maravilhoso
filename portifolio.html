@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="#" onclick="scrollToServices()">Meus Serviços</a>
+      <a href="#" onclick="scrollToContact()">Fale comigo</a>
+      <a href="#" onclick="scrollToPortfolio()">Portfolio</a>
+    </nav>
+  </header>
+  <section class="section1">
+    <div class="esquerdo">
+      <h1 class="h1t">Olá, meu nome é Maria</h1>
+      <p class="p1">
+        Sou programadora e gostaria de apresentar meu trabalho para você
+        através deste portfólio.
+      </p>
+      <a href="#" class="button" onclick="scrollToServices()">Meus Serviços</a>
+    </div>
+    <img src="img/Captura de tela 2024-07-31 175052.png" alt="" class="foto" />
+  </section>
+  <div class="patrocinador">
+    <a href="#">Alguns dos meus clientes</a>
+    <a href="#"><img src="img/apple-11 1.png" alt="" /></a>
+    <a href="#"><img src="img/slack-2 1.png" alt="" /></a>
+    <a href="#"><img src="img/spotify-1 1.png" alt="" /></a>
+  </div>
+  <div class="topo" id="services">
+    <a href="#">Conheça</a>
+    <h1>Meus Serviços</h1>
+    <p>Vou ajudar a sua empresa a alcançar grandes resultados.</p>
+  </div>
+  <section class="section1">
+    <div class="meio1">
+      <div class="icone1">
+        <a href="#"><img src="img/Group 21.png" alt="" /></a>
+        <div class="textos1">
+          <h1 class="h1">Consultoria</h1>
+          <p class="p1">
+            Te ajudo a organizar sua empresa e melhorar seus resultados.
+          </p>
+        </div>
+      </div>
+      <div class="icone2">
+        <a href="#"><img src="img/Group 17.png" alt="" /></a>
+        <div class="textos2">
+          <h1 class="h1">Desenvolvimento Web</h1>
+          <p class="p1">
+            Crie interfaces amigáveis e eficientes para suas aplicações web.
+          </p>
+        </div>
+      </div>
+      <div class="icone3">
+        <a href="#"><img src="img/Group 19.png" alt="" /></a>
+        <div class="textos3">
+          <h1 class="h1">Marketing Digital</h1>
+          <p class="p1">
+            Promova suas aplicações e produtos através de redes sociais e
+            email marketing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section2" id="contact">
+    <div class="meio2">
+      <img src="img/Captura de tela 2024-07-31 175052.png" alt="" class="img2" />
+      <div class="textos4">
+        <a href="#" class="a1">Economize seu tempo</a>
+        <h1 class="h4">Ganhe mais dinheiro</h1>
+        <p class="p4">
+          Digite aqui seu endereço de e-mail. Eu entrarei em contato para
+          fornecer um diagnóstico gratuito.
+        </p>
+        <form action="https://formspree.io/f/mgvwzwrz" method="POST">
+          <input type="email" name="_replyto" placeholder="E-mail" required />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section3" id="portfolio"></section>
+  <div class="fim">
+    <a href="#" class="a2">Conheça meu trabalho</a>
+    <h1 class="h5">Porfolio</h1>
+
+    <div class="img5">
+      <a href="#"><img src="img/1cd3e72ab9b5dfddb9e634cbd34ffaf6.jpg" alt="" class="i1" /></a>
+      <a href="#"><img src="img/Captura de tela 2024-08-14 164626.png" alt="" class="i2" /></a>
+      <a href="#"><img src="img/Captura de tela 2024-08-14 164644.png" alt="" class="i3" /></a>
+    </div>
+  </div>
+  </section>
+  <script>
+    function scrollToServices() {
+      const servicesSection = document.getElementById('services');
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function scrollToContact() {
+      const contactSection = document.getElementById('contact');
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function scrollToPortfolio() {
+      const portfolioSection = document.getElementById('portfolio');
+      portfolioSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+
+</html>

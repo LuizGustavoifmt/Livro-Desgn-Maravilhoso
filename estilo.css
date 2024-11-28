@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* fazer essa determinação em todos é um boa pratica pois o asterisco garante que vai ser
+   aplicado em todo documento, e assim vc pode ajustar a margem de acordo com sua
+   preferencia */
+h1 {
+    color: brown;
+    font-size: 96px;
+    font-weight: 900;
+    text-decoration: wavy;
+    text-align: center;
+    font-family: 'Anton', serif;
+}
+
+p {
+    font-size: 24px;
+    font-family: 'Courgette', serif;
+    font-style: normal;
+    text-align: justify;
+}
+
+.bg {
+    height: 500px;
+    /*height vem do ingles e significa altura*/
+    width: 100%;
+    /*width vem do ingles e significa largura*/
+    /* espaço determinado para onde a imagem tem que caber */
+
+    background-image: url(https://i.pinimg.com/564x/d0/f9/f4/d0f9f417cdfa16a0761f95eed102d2e0.jpg);
+    /* nao salvei a imagem no computador por isso puxei o URL */
+    background-size: cover;
+    /* o formato cover ajusta da imagem dentro do espaço determinado sem deformar ela mas
+   corta um pedaço, o formato contain faz a imagem aparecer sem corte mas deforma */
+    background-repeat: no-repeat;
+    /* vai garantir que a imagem não vai se repetir dentro do espaço determinado */
+    background-position: center;
+    background-attachment: fixed;
+    /* esse comando faz a imagem ficar fixada e o texto ir passando por cima, não funciona com
+   todo navegador */
+}
